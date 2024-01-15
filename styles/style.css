@@ -24,31 +24,37 @@
     font-weight: 400;
     line-height: 26px;
 }
+
 header {
     /* width: 1000px; */
     background: rgba(255, 144, 14, 0.10);
-    padding: 45px 240px;
+    padding: 45px 200px;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
+
 nav h3 {
     color: var(--Dark-01, #131313);
     font-size: 24px;
     font-weight: 700;
     margin-left: 0;
 }
+
 nav ul {
     display: flex;
     margin-right: 0;
 }
+
 nav li {
     list-style: none;
     text-decoration: none;
     margin-right: 30px;
 }
+
 nav li a {
     text-decoration: none;
     color: var(--Dark-02, #424242);
@@ -56,10 +62,12 @@ nav li a {
     font-size: 18px;
     font-weight: 500;
 }
+
 .header-title {
     text-align: center;
     margin-bottom: 50px;
 }
+
 .header-title h1 {
     color: var(--Dark-01, #131313);
     font-size: 60px;
@@ -67,73 +75,120 @@ nav li a {
     margin-bottom: 35px;
     margin-top: 90px;
 }
+
 .header-title p {
     margin-bottom: 30px;
 }
+
 header img {
     width: 100%;
     flex-wrap: wrap;
 }
+
+/* footer section */
+footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 100px 200px;
+    align-items: center;
+    height: 70px;
+}
+footer p{
+    padding-top: 20px;
+}
+
+
+
+
+
+
 /* responsive media queries */
 /* for mobile */
 @media screen and (max-width: 576px) {
-    .nav{
+    .nav {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 10px 20px;
     }
+
     nav h3 {
         margin: 0 auto;
     }
+
     nav ul {
-        margin:20px 0 auto;
+        margin: 20px 0 auto;
         padding-right: 30px;
     }
+
     nav li {
         margin-right: 10px;
     }
+
     .header-title {
         padding: 0 30px;
     }
-    .header-title h1{
+
+    .header-title h1 {
         margin-top: 40px;
     }
-    .header-img{
+
+    .header-img {
         padding: 0 20px;
     }
+    footer{
+        height: auto;
+        padding: 10px;
+    }
+    footer p{
+        padding-top: 0;
+    }
 
-    
+
 }
 
 /* for tablet */
-@media screen and (min-width: 576px) and ( max-width: 992Px ) {
-    .nav{
+@media screen and (min-width: 576px) and (max-width: 992Px) {
+    .nav {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 10px 20px;
     }
+
     nav h3 {
         margin: 0 auto;
     }
+
     nav ul {
-        margin:20px 0 auto;
+        margin: 20px 0 auto;
         margin-bottom: 0;
-        padding-right:30px ;
+        padding-right: 30px;
     }
+
     nav li {
         margin-right: 10px;
     }
+
     .header-title {
         padding: 0 40px;
     }
-    .header-title h1{
+
+    .header-title h1 {
         margin-top: 40px;
     }
-    .header-img{
+
+    .header-img {
         padding: 0 30px;
     }
-    
+    footer{
+        height: auto;
+        padding: 20px;
+    }
+    footer p{
+        padding-top: 0;
+    }
 
 }
